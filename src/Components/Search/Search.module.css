@@ -1,0 +1,36 @@
+.form{
+  display: flex;
+  align-items: center;
+}
+.input{
+  height: 24px;
+  padding: 3px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: 1px solid transparent;
+}
+.input:focus{
+  border-bottom: 1px solid transparent;
+  outline: 1px solid orange;
+}
+.input::placeholder{
+  color:white;
+}
+.button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 24px;
+  padding: 2px;
+  width: 24px;
+  margin: 0 0 0 5px;
+}
+.button:focus{
+  outline: 1px solid orange;
+}
+.icon{
+ 
+  fill:white;
+}

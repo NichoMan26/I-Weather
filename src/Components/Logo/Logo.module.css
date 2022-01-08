@@ -1,0 +1,16 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+}
+.icon{
+  fill:white;
+  width: 30px;
+  height: 30px;
+}
+.name{
+  color:White;
+  margin: 0 0 0 10px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: sans-serif;
+}

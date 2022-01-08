@@ -1,0 +1,18 @@
+.cityName{
+  color: white;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.headerWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 20px;
+  border-bottom: 1px solid white;
+}
+.date{
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  margin: 0 0 0 20px;
+}

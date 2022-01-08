@@ -1,0 +1,22 @@
+.wrapper{
+  width: 400px;
+  position: absolute;
+  left: calc(50vw - 200px);
+  top: 20px;
+  z-index: 20;
+}
+.body{
+  padding: 20px;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  border: 2px solid orange;
+  color: orange;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.cancelButton{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color:orange;
+}

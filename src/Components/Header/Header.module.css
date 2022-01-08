@@ -1,0 +1,12 @@
+.wrapper{
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  z-index: 10;
+  position: relative;
+  -webkit-box-shadow: 2px 7px 10px -3px #32439C; 
+  box-shadow: 2px 7px 10px -3px #32439C;
+  background: linear-gradient(180deg, #0034ff 0%, #526dff 100%);
+}

@@ -1,0 +1,21 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0 0;
+
+}
+.temperatureHeader{
+  color: white;
+  font-size: 25px;
+}
+.dayTemperature{
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+.degree{
+  font-size: 25px;
+  margin: 0 0 4px;
+}
