@@ -3,6 +3,7 @@ import dayIcon from '../../../img/01-s.png'
 import nightIcon from '../../../img/33-s.png'
 function Temperature(props) {
   let temp = props.weather.DailyForecasts[0].Temperature
+
   return (
     <div className={cls.wrapper}>
       <span className={cls.temperatureHeader}>Temperature:</span>
