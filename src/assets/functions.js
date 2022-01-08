@@ -3,7 +3,10 @@ import { KEY, PORT } from "../config";
 export const getCityCode = (userRequest, errorNotifiction) => {
   
   return fetch (PORT + '/locations/v1/cities/search?apikey=' + KEY + '&q=' + userRequest + '&details=true', 
-      { method: 'get' })
+      { method: 'get',
+        mode: 'cors',
+        headers: {'Access-Control-Allow-Origin':'*','Accept':'*/*','Access-Control-Allow-Credentials': true}
+      })
     .then((response) => {
       return response.text()
     })
@@ -15,7 +18,10 @@ export const getCityCode = (userRequest, errorNotifiction) => {
 export const getWeatherByCityCode = (CityCode) => {
 
   return fetch(PORT + '/forecasts/v1/daily/1day/' + CityCode + '?apikey=' + KEY + '&details=true&metric=true', 
-          { method: 'get' })
+              { method: 'get',
+              mode: 'cors',
+              headers: {'Access-Control-Allow-Origin':'*','Accept':'*/*','Access-Control-Allow-Credentials': true}
+            })
             .then((response) => {
               return response.text()
             })
