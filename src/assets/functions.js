@@ -4,9 +4,13 @@ export const getCityCode = (userRequest, errorNotifiction) => {
   
   return fetch (PORT + '/locations/v1/cities/search?apikey=' + KEY + '&q=' + userRequest + '&details=true', 
       { method: 'get',
-        mode: 'cors',
-        headers: {'Access-Control-Allow-Origin':'*','Accept':'*/*','Access-Control-Allow-Credentials': true}
-      })
+        withCredentials:true,
+        headers: new Headers({
+          'Content-Type':'multipart/form-data',
+          'Access-Control-Allow-Origin': '*'
+
+        }),
+    })
     .then((response) => {
       return response.text()
     })
@@ -18,10 +22,14 @@ export const getCityCode = (userRequest, errorNotifiction) => {
 export const getWeatherByCityCode = (CityCode) => {
 
   return fetch(PORT + '/forecasts/v1/daily/1day/' + CityCode + '?apikey=' + KEY + '&details=true&metric=true', 
-              { method: 'get',
-              mode: 'cors',
-              headers: {'Access-Control-Allow-Origin':'*','Accept':'*/*','Access-Control-Allow-Credentials': true}
-            })
+          { method: 'get',
+            withCredentials:true,
+            headers: new Headers({
+              'Content-Type':'multipart/form-data',
+              'Access-Control-Allow-Origin': '*'
+
+            }),
+          })
             .then((response) => {
               return response.text()
             })
