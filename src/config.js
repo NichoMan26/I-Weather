@@ -1,5 +1,5 @@
 //export const PORT = 'https://dataservice.accuweather.com/'
-export const PORT = 'https://cors-anywhere.herokuapp.com/http://dataservice.accuweather.com/'
+export const PORT = 'https://cors-anywhere.herokuapp.com/https://dataservice.accuweather.com/'
 
 
 
